@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,12 +24,12 @@
             });
         });
     </script>
-	<link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href=""><img src="" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -38,13 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a href="#section1" class="nav-link">Home</a>
+                    <a href="#top" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section2" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#section3" class="nav-link">Services</a>
+                    <a href="#project" class="nav-link">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -52,7 +55,7 @@
 </nav>
 
 <!--- Welcome Section -->
-<div class="container-fluid padding">
+<div class="container-fluid padding my-4">
     <div class="row welcome text-center">
         <div class="col-12">
             <h1 class="display-4">Welcome</h1>
@@ -61,18 +64,24 @@
         <div class="col-12">
             <p class="">My name is Kadek Chresna Kharisma</p>
             <div class="col-12">
-                <img src="img/pp.jpg" class="rounded-circle my-4 text-center" alt="">
+                <img src="img/pp.jpg" class="rounded-circle my-4 card-img-top" alt="">
             </div>
-            
         </div>
     </div>
-
+    <div class="col-12">
+            <div id="about"></div>
+            <hr>
+    </div>        
 </div>
+
 
 
 <!--- Cards -->
 <div class="container-fluid padding">
     <div class="row padding">
+        <div class="col-12 mb-4">
+            <h1 class="display-4">About</h1>
+        </div>
         <div class="col-md-4">
             <div class="card">
                 <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/450px-Flag_of_Indonesia.svg.png" alt="">
@@ -93,7 +102,7 @@
         </div>
         <div class="col-md-4">
             <div class="card">
-                <img class="card-img-top" src="img//team3.png" alt="">
+                <img class="card-img-top mx-auto px-4 m-5" src="img//if.png" alt="">
                 <div class="card-body">
                         <h3>Infomatics Engineering</h3>
                     <p class="card-text">My major at University of Lampung and my interest is <a href="http://if.unila.ac.id">Infomatics Engineering.</a></p>
@@ -104,23 +113,6 @@
 </div>
 
 
-<!--- Two Column Section -->
-<div class="container-fluid padding" id="section3">
-    <div class="row padding">
-        <div class="col-lg-6">
-            <h2>if you build it....</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse recusandae dolorum cum. Quasi aspernatur veritatis quaerat quidem, tempore dolores molestias architecto eaque debitis nobis sint provident ducimus fuga. Iste, doloribus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse recusandae dolorum cum. Quasi aspernatur veritatis quaerat quidem, tempore dolores molestias architecto eaque debitis nobis sint provident ducimus fuga. Iste, doloribus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse recusandae dolorum cum. Quasi aspernatur veritatis quaerat quidem, tempore dolores molestias architecto eaque debitis nobis sint provident ducimus fuga. Iste, doloribus.</p>
-            <br>
-            <a href="" class="btn btn-primary">Learn More</a>
-        </div>
-        <div class="col-lg-6">
-            <img src="img/desk.png" alt="" class="img-fluid">
-        </div>
-    </div>
-</div>
-
 <hr class="my-4">
 <!--- Fixed background -->
 <figure>
@@ -130,65 +122,58 @@
         </div>
     </div>
 </figure>
+<div id="project"></div>
 <!--- Meet the team -->
-<div class="container-fluid padding">
-    <div class="row text-center">
-        <div class="col-12 mt-4">
-            <h4 class="display-4">Projects</h4>
+
+<div class="container-fluid padding my-4">
+        <div class="row text-center">
+            <div class="col-12 mt-4">
+                <h4 class="display-4">Projects</h4>
+            </div>
+            <hr> 
         </div>
-        <hr> 
     </div>
-</div>
 
 <!--- Three Column Section -->
-<div class="container-fluid  padding">
+<div class="container-fluid  padding" >
         <div class="row text-center padding">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-code"></i>
-                <h3>HTML5</h3>
-                <p>Built with the latest version of HTML, HTML5 </p>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <i class="fab fa-laravel"></i>
+                <h3>Laravel</h3>
+                <p>Dronila Website (still Under Development).</p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-bold"></i>
-                <h3>Bootstrap</h3>
-                <p>Built with the latest version of Bootstrap, Bootstrap 4 </p>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <i class="fab fa-android"></i>
+                <h3>Android</h3>
+                <p> <a href="https://play.google.com/store/apps/details?id=com.kadek.tripgo">TripGo</a> Lampung Tourism Infromation App.</p>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <i class="fab fa-css3"></i>
-                <h3>CSS3</h3>
-                <p>Built with the latest version of CSS, CSS3 </p>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <i class="fas fa-microchip"></i>
+                <h3>IoT</h3>
+                <p><a href="https://github.com/kadekchrisna/mrkc"> Greenhouse Monitoring.</a> </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <i class="fab fa-php"></i>
+                <h3>PHP</h3>
+                <p>Real Count Voice for Election.</p>
             </div>
         </div>
         <hr class="my-4"> 
     </div>
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-lg-6">
-                <h2>if you build it....</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse recusandae dolorum cum. Quasi aspernatur veritatis quaerat quidem, tempore dolores molestias architecto eaque debitis nobis sint provident ducimus fuga. Iste, doloribus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse recusandae dolorum cum. Quasi aspernatur veritatis quaerat quidem, tempore dolores molestias architecto eaque debitis nobis sint provident ducimus fuga. Iste, doloribus.</p>
-            </div>
-            <div class="col-lg-6">
-                <img src="img/bootstrap2.png" alt="" class="img-fluid">
-            </div>
-        </div>
-        <hr class="my-4">
-    </div>
-
 <!--- Connect -->
-<div class="container-fluid padding">
-    <div class="row text-center padding">
-        <div class="col-12">
-            <h2>Connect</h2>
-        </div>
-        <div class="col-12 social padding">
-            <a href="https://www.instagram.com/chrisna_karisma/" ><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/kadekchrisna" ><i class="fab fa-github"></i></a>
+<div id="contact">
+    <div class="container-fluid padding" >
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Connect</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://www.linkedin.com/in/chrisna-kharisma-b03146137/" ><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kadekchrisna" ><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </div>
 </div>
-
 <!--- Footer -->
 <footer>
     <div class="container-fluid padding">
